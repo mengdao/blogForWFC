@@ -11,6 +11,15 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/toc.css">
+        <script src="/assets/js/jquery.tocLight.js"></script>
+        <script src="/assets/js/toc.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#toc').toc({ minimumHeaders: 1,
+                showEffect: 'slideDown' });
+            });
+        </script>
     </head>
     <body>
 
@@ -36,7 +45,7 @@
 
         
             
-                <li class="nav-header">Documentation</li>
+                <li class="nav-header">文档</li>
             
             <li data-order=""><a href="/doc/firstdocument.html">firstDocument</a></li>
         
@@ -45,20 +54,10 @@
         
 
         
-    
-        
-        
-
-        
-    
-        
-        
-
-        
-    
-        
-        
-
+            
+                <li class="nav-header">帮助</li>
+            
+            <li data-order=""><a href="/help/introduction.html">introduction</a></li>
         
     
 <!-- List additional links. It is recommended to add a divider
@@ -68,7 +67,96 @@
                     </div>
 
                     <div id="content" class="col-sm-10">
-                        <h4 id="testhahahah">testhahahah</h4>
+                        <h1 id=">操作指引</h1>
+
+<hr>
+
+<h3 id=">新建文档方法：<br/></h3>
+
+<p>Terminal - 项目根目录：<br/><br>
+<code>ruby bin/jekyll-page title category [filename] [--edit]</code><br/> 
+e.g.: <code>ruby bin/jekyll-page titleName help</code><br/><br>
+<strong>注意</strong>：此时最好指定<strong>title</strong>为<strong>英文</strong>，fileName会自动转为英文。如果有需要，在对应<code>_post</code>文件夹下将对应md文件的title改为中文即可。<br/> 
+<strong>category</strong>目前有<strong>data,iOS,android,help</strong>四种类型</p>
+
+<h3 id=">正文部分</h3>
+
+<p>正文部分根据markdown语法编辑文件即可。具体语法参见<a href="help/intro.html">markdown语法指南</a></p>
+
+<h3 id=">插入图片：</h3>
+
+<p>在根目录建立assets文件夹（已有）,然后依照md的语法来进行图片调用,语法如下：<br/><span>![描述]({{site.imgurl}}/imageName.jpg)</span><br/>
+其中，<span>{{site.imageurl}}</span>定位到图片资源根目录，即assets/img目录下<br/>
+<strong>注意：</strong>图片资源请放到assets/img目录下才能按上述方法进行调用。</p>
+
+<h3 id=">插入代码快并使其高亮</h3>
+
+<p>对应语法如下：</p>
+
+<p>```[对应语言]<br/>
+code block<br/>
+```<br/></p>
+
+<p>例如：<br/>
+```ObjectiveC<br/>
+code block<br/>
+```<br/>
+高亮效果如下：<br/></p>
+<div class="highlight"><pre><code class="language-ObjectiveC" data-lang="ObjectiveC"><span class="cp">#import &lt;UIKit/UIKit.h&gt;</span>
+<span class="cp">#import &quot;Dependency.h&quot;</span>
+
+<span class="k">@protocol</span> <span class="nc">WorldDataSource</span>
+<span class="k">@optional</span>
+<span class="o">-</span> <span class="p">(</span><span class="bp">NSString</span><span class="o">*</span><span class="p">)</span><span class="n">worldName</span><span class="p">;</span>
+<span class="k">@required</span>
+<span class="o">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="n">allowsToLive</span><span class="p">;</span>
+<span class="k">@end</span>
+
+<span class="k">@interface</span> <span class="nc">Test</span> : <span class="bp">NSObject</span> <span class="o">&lt;</span><span class="n">HelloDelegate</span><span class="p">,</span> <span class="n">WorldDataSource</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="bp">NSString</span> <span class="o">*</span><span class="n">_greeting</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">@property</span> <span class="p">(</span><span class="k">nonatomic</span><span class="p">,</span> <span class="k">readonly</span><span class="p">)</span> <span class="bp">NSString</span> <span class="o">*</span><span class="n">greeting</span><span class="p">;</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">IBAction</span><span class="p">)</span> <span class="nf">show</span><span class="p">;</span>
+<span class="k">@end</span>
+<span class="k">@implementation</span> <span class="nc">Test</span>
+
+<span class="k">@synthesize</span> <span class="n">test</span><span class="o">=</span><span class="n">_test</span><span class="p">;</span>
+
+<span class="p">+</span> <span class="p">(</span><span class="kt">id</span><span class="p">)</span> <span class="nf">test</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">[</span><span class="nb">self</span> <span class="nl">testWithGreeting</span><span class="p">:</span><span class="s">@&quot;Hello, world!</span><span class="se">\n</span><span class="s">Foo bar!&quot;</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="nf">dealloc</span> <span class="p">{</span>
+  <span class="p">[</span><span class="n">_greeting</span> <span class="k">release</span><span class="p">];</span>
+  <span class="p">[</span><span class="nb">super</span> <span class="n">dealloc</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="k">@end</span>
+</code></pre></div>
+<p>目前支持的高亮语言可以参考<a href="https://highlightjs.org/static/demo/">hightlight的在线demo</a></p>
+
+<h3 id=">自检方法：<br/></h3>
+
+<p>1.配置jekyll运行环境，步骤如下（进入终端）:</p>
+
+<ul>
+<li>$ gem install jekyll</li>
+<li>$ jekyll new my-awesome-site</li>
+<li>$ cd my-awesome-site</li>
+<li>/my-awesome-site $ jekyll serve</li>
+<li>打开浏览器，输入<b><a href="http://localhost:4000">http://localhost:4000</a></b>进行访问</li>
+</ul>
+
+<p>2.如果发现输入<b>jekyll serve</b>后出现错误，根据具体错误进行排查即可。</p>
+
+<h3 id=">注意</h3>
+
+<ul>
+<li><p>category支持中文分类，只要在config.yml中添加即可。
+在config.yml的修改上<strong>一定要小心引号</strong>，是<strong>竖直</strong>的引号，而非中文引号。</p></li>
+<li><p>默认每个文档都会生成文档结构目录，采用的是Table of Content Generator插件。如果不想在文档中生成该目录，可以在对应md文档头部加上 <strong>noToc: true</strong></p></li>
+<li><p>留言模块：友言 数据存储在网络上,可以使用常见社交应用进行登录。</p></li>
+</ul>
 
                     </div>
                 
