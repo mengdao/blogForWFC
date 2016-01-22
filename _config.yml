@@ -1,5 +1,5 @@
 # Site title and subtitle. This is used in _includes/header.html
-title: 'Travelguide-Docs'
+title: 'wfcBlog'
 subtitle: '项目相关文档'
 
 # Enable/show navigation. There are there options:
@@ -9,7 +9,7 @@ subtitle: '项目相关文档'
 navigation: 2
 
 # URL to source code, used in _includes/footer.html
-codeurl: 'http://gitlab.mafengwo.com/mobiledev/travelguide-docs'
+codeurl: 'http://gitlab.alibaba-inc.com/mengsong.mengsong/wfcBlog'
 
 # Default categories (in order) to appear in the navigation
 sections: [
