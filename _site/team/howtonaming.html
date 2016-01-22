@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Travelguide-Docs : 探索命名之美</title>
+        <meta name="description" content="项目相关文档">
+
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/toc.css">
+        <link rel="stylesheet" href="/css/table.css">
+        <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+        <script src="/assets/js/jquery.tocLight.js"></script>
+        <script src="/assets/js/toc.js"></script>
+        
+        <link rel="stylesheet" href="/css/anchor.css">
+        <script src="/assets/js/anchor.js"></script>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#toc').toc({ minimumHeaders: 1,
+                showEffect: 'slideDown' });
+
+            });
+        </script>
+    </head>
+    <body id="small">
+
+        <div class="container">
+            <div class=row-fluid>
+                <div id=header class=span12>
+                    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<div style="height: 44px;">
+    <strong style="float: left;line-height: 40px;overflow: hidden;"><a class=brand href="/">Travelguide-Docs</a>
+    <small>项目相关文档</small>
+    </strong>
+    <form style="float: left;margin-left: 20px;margin-top: 5px;height: 12px;font-size:12pt;"><input type="text" id="ts-search-input"></form>
+</div>
+<script>
+    var option = {
+        engineKey: '9667f1156bb229b54370'
+    };
+(function(w,d,t,u,n,s,e){
+ s = d.createElement(t);
+ s.src = u;
+ s.async = 1;
+ w[n] = function(r){
+ w[n].opts = r;
+ };
+ e = d.getElementsByTagName(t)[0];
+ e.parentNode.insertBefore(s, e);
+ })(window,document,'script','//tinysou-cdn.b0.upaiyun.com/ts.js','_ts');
+ _ts(option);
+</script>
+
+
+                </div>
+            </div>
+
+            <div class=row-fluid>
+                
+                
+                    <div id=navigation class=span2>
+                        <ul class="nav nav-list">
+    <li><a href="/">Home</a></li>
+    
+        
+        
+
+        
+            
+                <li class=nav-header>产品需求文档</li>
+            
+            <li data-order=""><a href="/product/temp2.html">temp2</a></li>
+        
+            
+            <li data-order=""><a href="/product/temp1.html">temp1</a></li>
+        
+            
+            <li data-order=""><a href="/product/product-travelguide-phone.html">旅游攻略需求</a></li>
+        
+            
+            <li data-order=""><a href="/product/product-travelguide-hd.html">旅游攻略需求-HD</a></li>
+        
+            
+            <li data-order=""><a href="/product/product-index.html">版本计划</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>业务实体描述文档</li>
+            
+            <li data-order=""><a href="/entity/entity-footprint.html">实体-足迹</a></li>
+        
+            
+            <li data-order=""><a href="/entity/entity-book.html">实体-攻略</a></li>
+        
+            
+            <li data-order=""><a href="/entity/entity-user.html">实体-用户</a></li>
+        
+            
+            <li data-order=""><a href="/entity/entity-image.html">实体-图片</a></li>
+        
+            
+            <li data-order=""><a href="/entity/entity-qna.html">实体-问答</a></li>
+        
+            
+            <li data-order=""><a href="/entity/entity-weather.html">实体-天气</a></li>
+        
+            
+            <li data-order=""><a href="/entity/entity-mdd.html">实体-目的地</a></li>
+        
+            
+            <li data-order=""><a href="/entity/entity-note.html">实体-游记</a></li>
+        
+            
+            <li data-order=""><a href="/entity/entity-poi.html">实体-POI</a></li>
+        
+            
+            <li data-order=""><a href="/entity/entity-sale.html">实体-自由行相关</a></li>
+        
+            
+            <li data-order=""><a href="/entity/entity-coupons.html">实体-优惠券</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>后台数据接口文档</li>
+            
+            <li data-order=""><a href="/data/system.html">System</a></li>
+        
+            
+            <li data-order=""><a href="/data/message.html">Message</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-mdd.html">目的地</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-discovery.html">发现</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-poi.html">POI</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-hotel.html">酒店</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-advertise.html">广告</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-community.html">社区</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-app-config.html">App配置相关</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-user-action.html">用户行为</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-widget.html">Widget</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-great-searching.html">大搜索</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-footprint.html">足迹</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-coupon.html">优惠券</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-sale.html">自由行</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-note.html">结构化游记</a></li>
+        
+            
+            <li data-order=""><a href="/data/voiceguide.html">翻译官相关</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-user.html">用户</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-poi-comments.html">POI点评</a></li>
+        
+            
+            <li data-order=""><a href="/data/data-index.html">data index</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>iOS项目文档</li>
+            
+            <li data-order=""><a href="/ios/howtoconfigcocoapods.html">如何配置CocoaPods</a></li>
+        
+            
+            <li data-order=""><a href="/ios/ioscommoncodes.html">ios公共代码使用文档</a></li>
+        
+            
+            <li data-order=""><a href="/ios/sharejump.html">ShareJump及scheme规范</a></li>
+        
+            
+            <li data-order=""><a href="/ios/ios-index.html">Index</a></li>
+        
+            
+            <li data-order=""><a href="/ios/objectivec-code-style.html">ObjectiveC 代码规范</a></li>
+        
+            
+            <li data-order=""><a href="/ios/ios-release-checklist.html">工程师[CheckList]</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Android项目文档</li>
+            
+            <li data-order=""><a href="/android/android-developer-guide.html">Android代码规范</a></li>
+        
+            
+            <li data-order=""><a href="/android/android-ui-guide.html">UI页面规范</a></li>
+        
+            
+            <li data-order=""><a href="/android/android-index.html">android index</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>团队相关文档</li>
+            
+            <li data-order=""><a href="/team/howtonaming.html">探索命名之美</a></li>
+        
+            
+            <li data-order=""><a href="/team/test-jekyll.html">test jekyll</a></li>
+        
+            
+            <li data-order=""><a href="/team/team-index.html">新人引导指南</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>帮助</li>
+            
+            <li data-order=""><a href="/help/projectinfo.html">项目相关</a></li>
+        
+            
+            <li data-order=""><a href="/help/intro.html">markdown语法指南</a></li>
+        
+    
+<!-- List additional links. It is recommended to add a divider
+    e.g. <li class=divider></li> first to break up the content. -->
+</ul>
+
+                    </div>
+                    
+                    <div id=content class=span10>
+                        <div class=page-header>
+    <strong style="font-size:20px;line-height:40px;">探索命名之美
+        
+    </strong>
+    <a target='_blank' href="http://gitlab.alibaba-inc.com/mengsong.mengsong/wfcBlog/edit/master/_posts/_posts/2015-04-15-howtonaming.md">[编辑]</a>
+</div>
+<div id="toc"></div>
+<div id="toc_hidden" style="display:none;"><strong style='text-align:center;width:100%;'>目录<a onclick=showToc()>[show]</a></strong></div>
+<pre><code>"好多人都故意在文章开头引用诗句来表达自己的情怀，我从来不干这种事"———— 孟嵩 &lt;br/&gt; “你的函数名字太难读懂了！”
+</code></pre>
+
+<p>“代码不仅仅要实现需求，还应该能让别人看懂。”</p>
+
+<p>“你这个代码命名很不合理！”</p>
+
+<p>很多新码农在工作中总会被老鸟批评程序命名的陋习，我也被批评过很多次。痛定思过，我决定要研究应该怎么命名，为什么要给函数一个好的命名很难，应该怎么样给函数命名。</p>
+
+<h3 id="section">一、	大牛们怎么看函数命名</h3>
+
+<p>Stephen Wolfram[1][2]对于函数命名进行了表述，总结了什么样的命名是好的命名，什么样的命名会给人造成困扰；同时他说，函数命名的过程就像一首短诗，值得仔细推敲，细细品味。</p>
+
+<p>Xah Lee[3]指出，好的命名应该可以让领域外的人一目了然，批评了Lisp语言的命名，如cdr，car，cons，认为这些命名让不懂Lisp的人看得不知所云，也批评了pop、push、shift这些命名，认为这些命名都与数据结构有过于深刻的关联。他认为这些过分含有领域背景的命名都是风格不好的命名。</p>
+
+<p>Marcus M. Edvall[3]认为，命名应该尽量从简，而且推荐用三个字母的前缀来区分各个函数的命名，如ibm公司定义的函数用ibm_xxx来标识，或者文件模块的函数用fil_xxx来标识。
+大牛们的观点总结如下：
+<br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>好的命名</th>
+      <th>坏的命名</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>简单，可以望文生句</td>
+      <td>用词太过宽泛</td>
+    </tr>
+    <tr>
+      <td>跨领域，外行一看便知</td>
+      <td>用词太过技术化</td>
+    </tr>
+    <tr>
+      <td>优美的像一首极简的诗</td>
+      <td>用容易产生歧义的词</td>
+    </tr>
+    <tr>
+      <td>在充分理解函数功能的基础上进行</td>
+      <td>函数本身功能实现有问题</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p>可是，在现实世界中，起名字并不是特别困难的事，为什么在程序语言里给函数命名是一件看起来非常困难的事呢？</p>
+
+<h3 id="vs">二、	人类世界语言VS程序语言</h3>
+
+<p>这种困难，归根结底是人类世界的语言和程序语言存在差异，主要在以下三个方面：</p>
+
+<p>|人类语言|程序语言|
+|——|——-|
+|定义不清晰，逐渐细化|完全、清晰、明确的定义|
+|含义不唯一，需要上下文|有名函数具有严格、唯一的含义及使用场景|
+|更容易来造词|只能在已有语言基础上来拼接|
+<br /></p>
+
+<ol>
+  <li>
+    <p>人类语言中，词的产生大多是由个人慢慢扩散至群体，并在过程中不断细化其含义。这些词一开始只在一个人或者一小群人里流行，慢慢的口口相传，在传播的过程中不断的细化，最终成为通用、流行的词汇，比如晒工资、房奴等词。人类世界语言的词的含义允许用时间来修正。而程序语言中，一个函数命名一旦被确定，马上会被相关所有函数确定并知晓，这个函数的重命名、修改、删除都会被其它相关函数所察觉。这一过程是瞬时性的，不允许用时间来修正的，且影响力始终不变的。例如Mathematica 1.0(1987)年的很多函数命名至今都没变，其影响力始终如一。</p>
+  </li>
+  <li>
+    <p>人类语言中词的含义往往不唯一，需要借鉴上下文里其它词来确定其含义。而程序语言中，每个函数都在一个特殊、唯一的场景里被命名，其含义也是唯一、不变的。</p>
+  </li>
+  <li>
+    <p>人类语言中的字、词允许再造。而在程序语言中，只能基于已有的语言基础去造词，比如大部分基于英语的程序语言，和基于中文的易语言。
+那了解了什么样的函数命名是好的命名，也了解了为什么程序语言命名难，那该怎么对函数进行命名呢？</p>
+  </li>
+</ol>
+
+<h3 id="section-1">三、	如何给一个函数命名</h3>
+
+<p>我认为，可以通过以下六种方法进行函数命名：</p>
+
+<ol>
+  <li>
+    <p>基于已有认知。如果在领域里已经有一些约定俗成的函数命名，最好直接拿来用，比如I18N、L10N等。新词最好由约定俗成的命名所构成，例如PointX。</p>
+  </li>
+  <li>
+    <p>尽量反映函数的通用性。命名应当能够反映函数的各种用途，如果函数本身是通用的，但是其命名带有某种领域的误导性，那么这种无形中缩小了函数使用范围的命名就是不好的命名。</p>
+  </li>
+  <li>
+    <p>能望文生义。好的命名应该一目了然，而且针对不同的情况应该做不同的命名。如果针对复杂函数，应当用复杂命名，如EventHandler；针对简单、直接、常见功能用尽量简单的名称，如表示尺寸的Size；针对生僻的函数功能用不很常见的名称，如Through。</p>
+  </li>
+  <li>
+    <p>由句到词。遇到不知道改怎么命名的函数，先用一句话将函数描述出来，再逐渐提炼、精简句子结构，最终提炼出函数名称。</p>
+  </li>
+  <li>
+    <p>类比、联想。如果找不到合适的词语，可以采用类比、联想等方式，形象的表述一个函数的含义，比如throw、catch。</p>
+  </li>
+  <li>
+    <p>易于理解。尽量不用一些容易造成误解的词语，比如live、active等词。
+解决了用什么词给函数命名的问题，但是怎么解决一些复杂情况下，词语组合的顺序问题？来看下Mathematica7的命名分析。</p>
+  </li>
+</ol>
+
+<h3 id="mathematica-7-">四、	Mathematica 7 命名统计分析</h3>
+
+<p>Mathematica是一款科学计算软件，很好地结合了数值和符号计算引擎、图形系统、编程语言、文本系统、和与其他应用程序的高级连接。而且作为一款跨领域软件，Mathematica的函数名能做到让不同领域的人一目了然，其命名很具有参考意义。</p>
+
+<p>分析数据来源：Mathematica线上API的所有函数名</p>
+
+<p>分析方法：通过提取API相关函数名并处理（如把复合词进行切词）并调用金山词霸线上API对所有函数名进行翻译，取第一个释义的词性进行统计，统计结果如下：
+<br />
+<img src="/assets/img/mathenmatica7.png" alt="mathematica7" />
+<br /></p>
+
+<h4 id="section-2">统计结果分析：</h4>
+
+<p>通过上述分析结果可以看出，名词和动词占了命名的最大比例。在对其中的名词和动词进行进一步分析之后，结论如下：</p>
+
+<ol>
+  <li>
+    <p>表述实体或者属性时，用名词或者名词词组。如Array、CMYKColor。</p>
+  </li>
+  <li>
+    <p>表述一个动作时，用动词或者动词词组。其中，若动作针对特殊实体，往往将实体名带上，如DeleteCases、FindRoot等；若动作属于通用性动作，则不带实体名，如Insert、Scan。</p>
+  </li>
+  <li>
+    <p>如果在描述一个实体时，需要突出被描述的实体，则将实体放在前，描述属性或者动作放在后面，如RootReduce、MapIndexed。</p>
+  </li>
+</ol>
+
+<h4 id="section-3">五、	总结</h4>
+<p>文章通过对命名进行研究，总结出一种函数命名方法，并通过对Mathematic的API函数名进行分析，得出各种情况下的词组组合情况。</p>
+
+<p>希望小文能对各位同事的工作起到帮助！</p>
+
+<h4 id="section-4">六、	参考文献</h4>
+
+<ol>
+  <li><a href="http://blog.wolfram.com/2008/01/10/ten-thousand-hours-of-design-reviews/">Stephen Wolfram 《Ten Thousand Hours of Design Reviews》</a></li>
+  <li><a href="http://blog.stephenwolfram.com/2010/10/the-poetry-of-function-naming/">Stephen Wolfram 《The Poetry of Function Naming》</a></li>
+  <li><a href="http://www.xahlee.info/UnixResource_dir/writ/naming_functions.html">Xah Lee 《The Importance of Terminology‘s Quality In Computer Languages》</a></li>
+  <li><a href="http://www.mathworks.com/matlabcentral/newsreader/view_thread/82557">Marcus M. Edvall 《How to name a function to minimize function names conflict》</a></li>
+</ol>
+
+
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2009106"></script>
+<script language ="JavaScript">
+    function hideToc() {
+        document.getElementById('toc').style.display = 'none';
+        document.getElementById('toc_hidden').style.display = '';
+    }
+    function showToc() {
+        document.getElementById('toc_hidden').style.display = 'none';
+        document.getElementById('toc').style.display = '';
+    }
+</script>
+                    </div>
+
+                
+            </div>
+
+            <div class=row-fluid>
+                <div id=footer class=span12>
+                    Documentation for <a href="http://gitlab.mafengwo.com/mobiledev/travelguide-docs">Travelguide-Docs</a>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function orderNav() {
+                var list,
+                    section,
+                    header,
+                    sections = [],
+                    lists = {},
+                    headers = {};
+
+                var navUl = document.querySelectorAll('#navigation ul')[0],
+                    navLis = document.querySelectorAll('#navigation ul li');
+
+                if (!navUl) return;
+
+                for (var i = 0; i < navLis.length; i++) {
+                    var order, li = navLis[i];
+
+                    if (li.classList.contains('nav-header')) {
+                        section = li.textContent || li.innerText;
+                        sections.push(section);
+                        headers[section] = li;
+                        continue;
+                    }
+
+                    if (!lists[section]) {
+                        lists[section] = [];
+                    }
+
+                    order = parseFloat(li.getAttribute('data-order'))
+                    lists[section].push([order, li]);
+                }
+
+                for (var i = 0; i < sections.length; i++) {
+                    section = sections[i];
+                    list = lists[section].sort(function(a, b) {
+                        return a[0] - b[0];
+                    });
+
+                    if (header = headers[section]) {
+                        navUl.appendChild(header);
+                    }
+                    for (var j = 0; j < list.length; j++) {
+                        navUl.appendChild(list[j][1]);
+                    }
+                }
+            }
+
+            if (document.querySelectorAll) orderNav();
+        </script>
+
+        <script>
+            addAnchors();
+        </script>
+    </body>
+</html>

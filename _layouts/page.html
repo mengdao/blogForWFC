@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+
+<div class=page-header>
+    <strong style="font-size:20px;line-height:40px;">{{ page.title }}
+        {% if page.subtitle %}<small>{{ page.subtitle }}</small>{% endif %}
+    </strong>
+    <a target='_blank' href="http://gitlab.alibaba-inc.com/mengsong.mengsong/wfcBlog/edit/master/_posts/{{page.path}}">[编辑]</a>
+</div>
+<div id="toc"></div>
+<div id="toc_hidden" style="display:none;"><strong style='text-align:center;width:100%;'>目录<a onclick=showToc()>[show]</a></strong></div>
+{{ content}}
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2009106"></script>
+<script language ="JavaScript">
+    function hideToc() {
+        document.getElementById('toc').style.display = 'none';
+        document.getElementById('toc_hidden').style.display = '';
+    }
+    function showToc() {
+        document.getElementById('toc_hidden').style.display = 'none';
+        document.getElementById('toc').style.display = '';
+    }
+</script>
