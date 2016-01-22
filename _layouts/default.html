@@ -12,12 +12,13 @@
         <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/toc.css">
+        <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
         <script src="{{ site.baseurl }}/assets/js/jquery.tocLight.js"></script>
         <script src="{{ site.baseurl }}/assets/js/toc.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                $('#toc').toc({ minimumHeaders: 1,
-                showEffect: 'slideDown' });
+                $('#toc').toc(
+                    { minimumHeaders: 1,showEffect: 'slideDown' });
             });
         </script>
     </head>

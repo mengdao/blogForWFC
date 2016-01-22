@@ -7,6 +7,18 @@ layout: default
         {% if page.subtitle %}<small>{{ page.subtitle }}</small>{% endif %}
     </h2>
     <a target='_blank' href="http://github.com/mengdao/mengdao.github.io/edit/master/{{page.path}}">[编辑]</a>
+ 	<div id="toc"></div>
+	<div id="toc_hidden" style="display:none;"><strong style='text-align:center;width:100%;'>目录<a onclick=showToc()>[show]</a></strong></div>
 </div>
 
 {{ content }}
+<script language ="JavaScript">
+    function hideToc() {
+        document.getElementById('toc').style.display = 'none';
+        document.getElementById('toc_hidden').style.display = '';
+    }
+    function showToc() {
+        document.getElementById('toc_hidden').style.display = 'none';
+        document.getElementById('toc').style.display = '';
+    }
+</script>

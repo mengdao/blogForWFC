@@ -4,7 +4,7 @@
     var defaults = {
       noBackToTopLinks: false,
  title: '<strong style=\'text-align:center;width:100%;\'>目录<a onclick=hideToc()>[hide]</a></strong>',
-      minimumHeaders: 3,
+      minimumHeaders: 2,
       headers: 'h1, h2, h3, h4, h5, h6',
       listType: 'ol', // values: [ol|ul]
       showEffect: 'show', // values: [show|slideDown|fadeIn|none]
