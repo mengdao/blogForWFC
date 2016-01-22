@@ -5,7 +5,7 @@ category: doc
 date: 2016-01-22 15:35:14
 ---
 <h2 id="block">蜀道难</h2>
-![白哥](http://d.hiphotos.baidu.com/baike/w%3D268/sign=b6f103ab52da81cb4ee684cb6a67d0a4/78310a55b319ebc4acda9dc68126cffc1f1716ca.jpg)
+![白哥]({{site.imageurl}/libai.jpg})
 </br>
 </br>
 </br>
