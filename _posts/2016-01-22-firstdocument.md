@@ -5,7 +5,7 @@ category: doc
 date: 2016-01-22 15:35:14
 ---
 <h2 id="block">蜀道难</h2>
-![白哥]({{ site.imageurl }}/libai.jpg})
+![白哥]({{ site.imageurl }}/libai.jpg)
 </br>
 </br>
 </br>
